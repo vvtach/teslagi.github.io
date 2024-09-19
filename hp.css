@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style-type: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bgcolor: #101010;
+  --color: #f2f2f2;
+  --bdf: blur(15px);
+  --colorbdf: #f2f2f20d;
+  --bordercolnav: #f2f2f21a;
+}
+
+img {
+  border-radius: 13px;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: var(--bgcolor);
+  height: 1000px;
+}
+
+/* navbar style start */
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.7rem 2.8rem;
+  position: sticky;
+  z-index: 5;
+}
+
+/* left navbar style part */
+.wrapper-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.wrapper-left .top {
+  margin-left: 0.5rem;
+  color: var(--color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: -0.8px;
+}
+
+.wrapper-left .bottom {
+  margin-left: 0.5rem;
+  color: rgb(118, 118, 118);
+  font-size: 0.8rem;
+  font-weight: 460;
+}
+/* left navbar style part */
+
+/* mid style navbar */
+.wrapper-mid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--colorbdf);
+  padding: 0.7rem 0.5rem;
+  border: 0.8px solid #f2f2f20d;
+  border-radius: 30px;
+  gap: 0.5rem;
+}
+
+.wrapper-mid .topup {
+  color: var(--color);
+  letter-spacing: -0.3px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding: 0.5rem 1.2rem;
+  border-radius: 19px;
+  transition: 0.3s ease-in-out;
+  text-shadow: 0 0 2px #b1b1b1, 0 0 7px #c9c9c9, 0 0 15px #b9b9b9,
+    0 0 20px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff;
+}
+
+.wrapper-mid .topup:hover {
+  background-color: var(--bordercolnav);
+}
+
+.wrapper-mid .event {
+  color: var(--color);
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding: 0.5rem 1.2rem;
+  border-radius: 19px;
+  transition: 0.3s ease-in-out;
+  text-shadow: 0 0 2px #b1b1b1, 0 0 7px #c9c9c9, 0 0 15px #b9b9b9,
+    0 0 20px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff;
+}
+
+.wrapper-mid .event:hover {
+  background-color: var(--bordercolnav);
+}
+/* style mdi done */
+
+/* style navbar right */
+.wrapper-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-right .wa {
+  color: var(--color);
+  font-family: "inter", sans-serif;
+  font-size: 0.9rem;
+  padding-right: 0.5rem;
+  font-weight: 400;
+  transition: 0.2s ease;
+}
+
+.menu-right .wa:hover {
+  opacity: 0.8;
+}
+
+.menu-right .ig {
+  color: var(--color);
+  font-family: "inter", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  transition: 0.2s ease;
+}
+
+.menu-right .ig:hover {
+  opacity: 0.8;
+}
+/* style navbar end */
+
+/* section info menu */
+.info-section {
+  position: sticky;
+  top: 0;
+  margin-top: 0.5rem;
+  padding: 1.5rem 3rem;
+  background-color: #101010;
+}
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menu a {
+  font-family: "inter", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: white;
+  margin-right: 1.6rem;
+  transition: 0.2s ease;
+}
+
+.menu a:hover {
+  opacity: 0.8;
+}
+
+/* section menu end */
+
+/* discover start style */
+
+.card {
+  padding: 3rem 3rem;
+}
+
+.blockwrapper {
+  border-radius: 30px;
+}
+
+.wrapper-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper-card .flex {
+  display: flex;
+}
+
+.card .wrapper-card a {
+  color: white;
+  cursor: default;
+}
+
+.wrapper-card .disc {
+  font-family: "inter", sans-serif;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding-left: 0.5rem;
+  cursor: default;
+}
+
+.flex p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: "inter", sans-serif;
+  padding-right: 1rem;
+}
+
+.card-photo {
+  max-width: 100%;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  color: #101010;
+  margin-top: 1.5rem;
+  padding: 1rem;
+}
+
+.card-photo a {
+  scroll-snap-align: start;
+  margin-bottom: 2rem;
+}
+
+.card-photo img {
+  width: 450px;
+  opacity: 0.3;
+  transition: 0.2s ease;
+}
+
+.card-photo img:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+  transition: 0.2s;
+}
+/* discover menu end */
+
+/* none zone */
+#e-logo {
+  display: none;
+}
+
+#close1 {
+  display: none;
+}
+
+#foot {
+  display: none;
+}
+
+/* breakpoints */
+@media (max-width: 760px) {
+  html {
+    font-size: "";
+  }
+
+  .navbar-menu {
+    padding: 1.7rem 1.3rem;
+  }
+
+  #e-logo {
+    display: inline-block;
+    color: white;
+    background-color: var(--colorbdf);
+    border: 1px solid #f2f2f20d;
+    padding: 0.7rem 0.8rem 0.3rem;
+    border-radius: 30px;
+    transition: 0.2s ease;
+  }
+
+  #e-logo:hover {
+    border-color: rgb(111, 111, 111);
+  }
+
+  #close1 {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 1.3rem;
+  }
+
+  #tag {
+    color: white;
+    background-color: var(--colorbdf);
+    border: 1px solid #f2f2f20d;
+    padding: 0.7rem 0.8rem 0.3rem;
+    border-radius: 30px;
+    transition: 0.2s ease;
+  }
+
+  #tag:hover {
+    border-color: rgb(111, 111, 111);
+  }
+
+  .menu-right {
+    position: absolute;
+    top: -1200%;
+    right: 0%;
+    background-color: rgba(0, 0, 0, 0.856);
+    width: 100%;
+    height: 100vh;
+    transition: 0.8s ease;
+    z-index: 1;
+  }
+
+  .menu-right.active {
+    top: 0;
+  }
+
+  .menu-right a {
+    display: block;
+    padding-left: 2rem;
+  }
+
+  .menu-right .wa {
+    font-size: 1.6rem;
+    font-weight: 450;
+  }
+
+  .menu-right .ig {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    font-weight: 450;
+  }
+
+  .wrapper-left .top {
+    font-size: 1rem;
+  }
+
+  .wrapper-left .bottom {
+    font-size: 0.7rem;
+  }
+
+  .mid {
+    position: absolute;
+    right: 5rem;
+  }
+
+  /* section disc */
+  .info-section {
+    padding: 1.3rem 1.5rem;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  /* card section */
+  .card {
+    padding: 0rem 0.8rem;
+    margin-top: 2rem;
+  }
+
+  .blockwrapper {
+    padding: 1rem 1rem;
+  }
+
+  .card-photo {
+    overflow-x: hidden;
+  }
+
+  .card-photo img {
+    width: 300px;
+  }
+
+  .wrapper-card .flex {
+    display: flex;
+  }
+
+  .wrapper-card .flex .right {
+    font-size: 1.2rem;
+  }
+}
